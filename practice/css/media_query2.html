@@ -1,0 +1,94 @@
+<!DOCYTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Holy Grail Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .container {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        .content {
+            display: flex;
+        }
+        header {
+            border-bottom: 1px solid black;
+            padding-left: 20px;
+        }
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+        }
+        .content nav, .content aside {
+            border-right: 1px solid gray;
+        }
+        .content aside {
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main {
+            padding: 15px;
+        }
+        nav {
+            order: -1;
+        }
+        aside {
+            padding: 10px;
+        }
+        @media(max-width: 500px) {
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside {
+                border: none;
+                flex-basis: auto;
+            }
+            .aside {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+             <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia amet assumenda laborum eum rem repellat, nihil eaque incidunt deleniti, explicabo sed dolores, voluptatem alias minus distinctio culpa necessitatibus vel tenetur vitae maxime repudiandae ut perspiciatis consequatur! Praesentium maiores nesciunt, modi ducimus ipsa ratione rerum et iste illum? Itaque, dolorem, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse blanditiis tempora, temporibus deleniti excepturi nam et nisi laboriosam dolores quae eveniet beatae sapiente eligendi ex quos placeat voluptate sunt sit veniam, minima, doloribus, debitis dignissimos quaerat! Accusamus voluptatibus modi rem in tenetur provident. Optio odio, voluptates, dignissimos doloremque, sequi provident dicta pariatur voluptatibus neque quod voluptatem ipsum magnam necessitatibus tempora eum, esse aliquid molestias fugit veritatis! Aliquid quos non atque!
+                
+            </main>
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.com">홈페이지</a>
+        </footer>  
+    </div>
+    
+</body>
+</html>

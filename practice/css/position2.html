@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            padding-top:20px;
+        }
+        #parent, #other {
+            border: 10px solid tomato;
+        }
+        #large{
+            height: 1000px;
+            background-color: tomato;
+        }
+        #parent {
+            position: relative;
+        }
+        #me {
+            background-color: darkblue;
+            color:wheat;
+            position: fixed;
+            left:0;
+            top:0;
+            width:100%;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+       parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>    
+</body>
+</html>
